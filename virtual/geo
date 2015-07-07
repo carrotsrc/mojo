@@ -1,0 +1,6 @@
+start:		2048
+startb:		1048576
+
+CSH:		64 63 16
+CSizeb:		516096
+blocks:		32256

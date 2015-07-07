@@ -1,0 +1,3 @@
+virtual/*.img
+virtual/*.vdi
+bin/obj/*
