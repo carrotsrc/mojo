@@ -1,3 +1,4 @@
 virtual/*.img
 virtual/*.vdi
+virtual/mojo/*
 bin/obj/*
