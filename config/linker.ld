@@ -6,13 +6,10 @@ SECTIONS
 	. = 0x100000; /* start at 1MB */
 
 	_kspace_saddr = .;
-	.multiboot BLOCK(4K):
-	{
-		*(.multiboot) 	/* add the multiboot header */
-	}
 	
 	.text BLOCK(4K):
 	{
+		*(.multiboot) 	/* add the multiboot header */
 		*(.text)
 	}
 

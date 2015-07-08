@@ -23,6 +23,9 @@ stack_top:
 .global start
 
 start:
+	hlt
+	jmp start
+
 	lgdt __pp_gdt
 	ljmp $0x08, $start_hi
 	
