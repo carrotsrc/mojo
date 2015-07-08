@@ -16,12 +16,15 @@ CC=${TOOLCHAIN_CC} ${CFLAGS}
 AS=${TOOLCHAIN_AS}
 LD=${TOOLCHAIN_LD} ${CFLAGS LDFLAGS}
 
-OFILES=${ODIR}/boot.o ${ODIR}/kentry.o
+OFILES=${ODIR}/boot.o ${ODIR}/gdt.o ${ODIR}/kentry.o
 
 boot.o:
 	${AS} boot/boot.s -o ${ODIR}/boot.o
 
-kentry.o:
+gdt.o:
+	${CC} -c kernel/init/gdt.c -o ${ODIR}/gdt.o
+
+kentry.o: boot.o gdt.o
 	${CC} -c kernel/kentry.c -o ${ODIR}/kentry.o
 	
 all: boot.o kentry.o
