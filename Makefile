@@ -1,6 +1,6 @@
 ARCH=i586-elf
 TOOLCHAIN_DIR=~/development/xgcc/bin
-TARGET=bin/foreja
+TARGET=bin/mojo.bin
 
 TOOLCHAIN_AS=${TOOLCHAIN_DIR}/${ARCH}-as
 TOOLCHAIN_CC=${TOOLCHAIN_DIR}/${ARCH}-gcc
