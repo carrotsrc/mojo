@@ -51,6 +51,11 @@
 				Perspective of operational architecture
 			</h4>
 
+			<p>
+				The operational network is the various functional relationships
+				of the entire system. At the moment, the edges define interaction
+				and flow.
+			</p>
 <ul>
 	<li>
 		CPU operations can be thought of as nodes, or operation nodes
@@ -85,17 +90,59 @@
 	<p>
 		The operational architecture changes the state of the conceptual network. The 
 		conceptual network is purely relationships between data points. In order to access
-		a data point, there must be some form of edge leading to it, some valid
+		a data point, there must be some form of edge leading to it; some valid
 		relationship with it in the graph.
+	</p>
+	
+	
+	<p>
 	</p>
 	
 	<ul>
 		<li>
-		Data points are, by themselves, arbitrary. A conceptual framework projected
-		on the data point and it's relationships is what gives it meaning.
+			Data points are, by themselves, arbitrary. A conceptual framework 
+			projected on the data point and it's relationships is what gives it 
+			meaning.
+		</li>
+		
+		<li>
+			Files, or highly intra-connected conceptual modules, can be thought 
+			of as chains of nodes again, much like the basis of the operational 
+			network. A text file, for instance, is a chain of byte nodes. It has 
+			a start, interconnectable node and the chain leads to a leaf node or 
+			EOF. The file is abstracted as a subgraph in the conceptual network.
 		</li>
 	</ul>
+
+<h5>
+	<a id="perspective-on-data" class="anchor" href="#perspective-on-data" aria-hidden="true">
+	<span class="octicon octicon-link"></span>
+	</a>
+	Perspective on source nodes
+</h5>
 	
+	<p>
+		There seems to be two forms of source node
+	</p>
+	<ul><li>Discrete data source</li>
+		<li>(pseudo)Continuous data</li></ul>
+	
+	<p>
+		The discrete data sources generate single packets/particles of data, 
+		either once or over time. The packets may have a relationship to one
+		another but it will be conceptually much higher level.
+	</p>
+	
+	<p>
+		The continuous data sources generate highly connected sequences, each
+		node is directly related to it's siblings.
+	</p>
+
+	<p>
+		A discrete source node can generate data nodes which can later be related
+		in terms of a larger concept, and these data nodes can become, in themselves,
+		a form of continuous data.
+	</p>
 </section>
 
         <aside id="sidebar">
